@@ -1,3 +1,7 @@
+"""
+Cut audio clip and save in project dir
+"""
+
 from scipy.io import wavfile
 
 def cut_audio(input_file, output_file, start_time, end_time):
@@ -19,8 +23,8 @@ def cut_audio(input_file, output_file, start_time, end_time):
     wavfile.write(output_file, sample_rate, cut_data)
 
 # Usage
-input_file = "/home/damian/Downloads/Wiguez & Vizzen Ft. Maestro Chives - Running Wild (EH!DE Remix) [NCS Release].wav"
-output_file = "your_audio_file_cut.wav"
+input_file = "track.wav"
+output_file = "output_file.wav"
 start_time = 50  # start time in seconds
 end_time = 80 # end time in seconds
 
